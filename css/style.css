@@ -1,0 +1,492 @@
+:root {
+  --white-text: rgba(255, 255, 255, 1);
+
+  --blue-text: rgba(33, 150, 243, 1);
+
+  --black-text: rgba(33, 33, 33, 1);
+
+  --grey-text: rgba(117, 117, 117, 1);
+
+  --grey-text-op60: rgba(255, 255, 255, 0.6);
+
+  --back-grey: rgba(47, 48, 58, 1);
+
+  --back-white-gray: rgba(245, 244, 250, 1);
+
+  --back-potfolio-img: rgba(238, 238, 238, 1);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header,
+.logo,
+.adress-header,
+.header-nav-links,
+.container-header .header-nav-links,
+.social-links,
+.advantages,
+.direct-list,
+.section-directions li,
+.our-team-list,
+.footer .logo-footer,
+.nav-portfolio {
+  display: flex;
+}
+
+.header {
+  background-color: var(--white-text);
+  border-bottom: solid 1px #ececec;
+  align-items: baseline;
+}
+
+.container-header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: baseline;
+  display: flex;
+}
+
+.header-nav-links {
+  align-items: baseline;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--blue-text);
+  padding-top: 25px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+}
+
+.web-black {
+  color: var(--black-text);
+}
+
+.web-white {
+  color: var(--white-text);
+}
+
+.social-links {
+  margin: 0;
+  padding: 0;
+  align-items: baseline;
+}
+
+.social-links .link {
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.social-links .item {
+  align-items: baseline;
+}
+
+.social-links .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  color: var(--blue-text);
+  background: var(--white-text);
+}
+
+.social-links .current {
+  color: var(--blue-text);
+}
+
+.adress-header {
+  margin: 0;
+  padding: 0;
+  align-items: baseline;
+}
+
+.adress-header a {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  color: var(--grey-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  align-items: baseline;
+}
+
+.adress-header .link:hover,
+.adress-header .link:focus {
+  color: var(--blue-text);
+  background: var(--white-text);
+}
+
+.adress-style {
+  margin-left: auto;
+}
+
+.adress-header .mail {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.adress-style {
+  margin-left: auto;
+}
+
+.section-top {
+  background-color: var(--back-grey);
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.title-top {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text);
+  width: 696px;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  background-color: var(--blue-text);
+  color: var(--white-text);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.section-advantarges {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.advantages h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-text);
+}
+
+.description-advantages {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
+}
+
+.advantages .item {
+  width: 270px;
+}
+
+.advantages .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-directions {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.title-section-directions {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.direct-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.direct-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team {
+  background-color: var(--back-white-gray);
+  padding-top: 96px;
+  padding-bottom: 94px;
+}
+
+.title-our-team {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.our-team-list li {
+  width: 270px;
+}
+
+.our-team-list .item {
+  background-color: var(--white-text);
+}
+
+.our-team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.spec-pro {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.specialists {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+  margin-bottom: 10px;
+}
+
+.profession {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
+}
+
+.footer {
+  background-color: var(--back-grey);
+  color: var(--white-text);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--blue-text);
+  margin-bottom: 20px;
+}
+
+.footer-adress {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-text);
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.footer-adress-list {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.footer-mail-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--grey-text-op60);
+}
+
+.footer-adress-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.section-nav {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.nav-portfolio {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.nav-portfolio button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+  background-color: var(--back-white-gray);
+  border-radius: 4px;
+  border-color: transparent;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.nav-portfolio .btn:not(:last-child) {
+  margin-right: 6px;
+}
+
+.nav-portfolio .link:hover,
+.nav-portfolio .link:focus {
+  color: var(--white-text);
+  background: var(--blue-text);
+  outline: none;
+}
+
+.project {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project .item {
+  margin: 0;
+  width: 370px;
+}
+
+.projects-portfolio {
+  margin: 0;
+  padding: 0;
+  width: 322px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--black-text);
+  background-color: var(--white-text);
+  text-align: left;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 4px;
+}
+
+.portfolio-categories {
+  margin: 0;
+  padding: 0;
+  width: 322px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
+  background-color: var(--white-text);
+  text-align: left;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.pro-cat {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: solid 1px #eeeeee;
+  box-sizing: border-box;
+}
+
+.project .item:nth-child(3n + 2) {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.project .item:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
