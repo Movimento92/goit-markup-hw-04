@@ -337,15 +337,15 @@ ul {
 }
 
 .item.clock::before {
-  background-image: url(/img/icon/clock.svg);
+  background-image: url(../img/icon/clock.svg);
 }
 
 .item.diagram::before {
-  background-image: url(/img/icon/diagram.svg);
+  background-image: url(../img/icon/diagram.svg);
 }
 
 .item.astronaut::before {
-  background-image: url(/img/icon/astronaut.svg);
+  background-image: url(../img/icon/astronaut.svg);
 }
 
 /* directions */
