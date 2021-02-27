@@ -112,6 +112,10 @@ ul {
   color: var(--white-text);
 }
 
+.web-blue {
+  color: var(--blue-text);
+}
+
 .social-links {
   margin: 0;
   padding: 0;
@@ -163,13 +167,13 @@ ul {
   letter-spacing: 0.02em;
   padding-top: 20px;
   padding-bottom: 20px;
-  align-items: baseline;
+  display: flex;
+  align-items: center;
 }
 
 .adress-header .link:hover,
 .adress-header .link:focus {
   color: var(--blue-text);
-  background: var(--white-text);
 }
 
 .adress-header .mail {
@@ -178,9 +182,8 @@ ul {
 }
 
 .icon {
-  align-items: baseline;
   margin-right: 10px;
-  fill: var(--clients);
+  fill: currentColor;
 }
 
 .mail.icon:hover,
@@ -192,34 +195,6 @@ ul {
 .tel.icon:focus {
   fill: var(--blue-text);
 }
-
-/* .adress-header .mail::before {
-  content: '';
-  display: inline-block;
-  align-items: baseline;
-  height: 20px;
-  width: 20px;
-  outline: solid 1px tomato;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-image: url(../img/symbol-defs.svg#mail);
-  margin-right: 10px;
-}
-
-.adress-header .tel::before {
-  display: inline-block;
-  align-items: baseline;
-  height: 20px;
-  width: 20px;
-  background-size: contain;
-  content: '';
-  outline: solid 1px tomato;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../img/symbol-defs.svg#tel);
-  margin-right: 10px;
-} */
 
 .adress-style {
   margin-left: auto;
@@ -295,8 +270,8 @@ ul {
 }
 
 .advantages h3 {
-  margin-top: 0;
   margin-bottom: 10px;
+  margin-top: 30px;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -399,11 +374,8 @@ ul {
   margin-bottom: 0;
 }
 
-.our-team-list li {
-  width: 270px;
-}
-
 .our-team-list .item {
+  width: 270px;
   background-color: var(--white-text);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -447,7 +419,6 @@ ul {
   display: flex;
   padding-left: 0;
   align-items: center;
-  width: 44px;
 }
 
 .social-list {
@@ -468,11 +439,6 @@ ul {
   height: 44px;
   align-items: center;
   justify-content: center;
-}
-
-.social-item:last-child {
-  margin-right: 0;
-  padding: 12px;
 }
 
 .icon-svg {
@@ -511,11 +477,11 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   margin-left: 0;
+  margin-top: 0;
 }
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -538,10 +504,18 @@ ul {
   cursor: pointer;
 }
 
+.clients-list .clients-logo:last-child {
+  margin-right: 0;
+}
+
 .clients-list .clients-logo:hover .clients-svg,
 .clients-list .clients-logo:focus .clients-svg {
   fill: var(--blue-text);
   border: 1px solid var(--blue-text);
+}
+
+.clients-svg {
+  fill: var(--clients);
 }
 
 /* footer */
@@ -560,8 +534,7 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  align-items: center;
-  text-align: center;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -569,7 +542,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  color: var(--blue-text);
+  color: var(--white-text);
   margin-bottom: 20px;
 }
 
